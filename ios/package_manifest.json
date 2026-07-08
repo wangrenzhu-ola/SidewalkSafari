@@ -1,0 +1,8 @@
+{
+  "app_name": "TankTheater Care Scenes",
+  "platform": "iOS native SwiftUI",
+  "xcodeproj": "TankTheaterCareScenes.xcodeproj",
+  "bundle_id": "com.tanktheater.carescenes",
+  "storekit_config": "TankTheaterCareScenes/StoreKit/TankTheaterCareScenes.storekit",
+  "privacy_manifest": "TankTheaterCareScenes/PrivacyInfo.xcprivacy"
+}

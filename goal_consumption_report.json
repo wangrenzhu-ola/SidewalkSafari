@@ -1,0 +1,30 @@
+{
+  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-001-tanktheater-care-scenes/package_goal_map.md",
+  "expanded_pm_refs": [
+    "pm_brief.md",
+    "current_version_requirements.md",
+    "acceptance_gates.md",
+    "design_qa_gates.md",
+    "design_blueprint.md",
+    "upstream_context.md",
+    "future_versions.md",
+    "product_goal.md",
+    "feature_blocks.md",
+    "acceptance.md",
+    "acceptance_matrix.json",
+    "goal_manifest.json",
+    "product_fingerprint.json",
+    "market_signal_audit.json",
+    "market_signal_audit.md"
+  ],
+  "implementation_mode": "goal_driven_model_build",
+  "python_template_substitution_allowed": false,
+  "applied_skill_ids": [
+    "build-ios-apps",
+    "swiftui-ui-patterns",
+    "swiftui-view-refactor",
+    "taste-skill",
+    "ios-iap-implementation",
+    "ios-privacy-implementation"
+  ]
+}
