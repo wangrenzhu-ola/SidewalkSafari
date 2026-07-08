@@ -1,0 +1,17 @@
+{
+  "schema_version": "appfactory.git_readback.v1",
+  "repo_path": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari",
+  "branch": "main",
+  "head_commit": "0b7fd1d477c40116fd143a9b6b92b700dd4edba6",
+  "status_short_branch": "## main...origin/main",
+  "remote_origin": "git@github.com:wangrenzhu-ola/SidewalkSafari.git",
+  "recent_commits": [
+    "0b7fd1d Refresh Sidewalk Safari package summary",
+    "895a2c4 Complete Sidewalk Safari rough app readback",
+    "8b74217 Refresh Sidewalk Safari evidence readback",
+    "179ef32 Build Sidewalk Safari native SwiftUI rough app",
+    "43b276a Initialize Sidewalk Safari Xcode shell"
+  ],
+  "github_url": "https://github.com/wangrenzhu-ola/SidewalkSafari",
+  "generated_at": "2026-07-08T15:16:55.502925+00:00"
+}
