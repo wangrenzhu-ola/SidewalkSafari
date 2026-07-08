@@ -1,0 +1,104 @@
+{
+  "schema_version": "appfactory.source_shape_readback.v1",
+  "app_name": "Sidewalk Safari",
+  "repo_path": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari",
+  "swift_file_count": 9,
+  "swift_files": [
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/AppView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/Components.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/Models.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/OnboardingView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/PremiumPreviewView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/QuestPickerView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/QuestRunView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/SafariLogView.swift",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari/SidewalkSafariApp.swift"
+  ],
+  "tests_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafariTests/SidewalkSafariTests.swift",
+  "requirement_source_results": [
+    {
+      "requirement_id": "REQ-CRUD-001",
+      "source_markers": [
+        "func createQuest",
+        "func updateQuest",
+        "func deleteQuest",
+        "CreateQuestView",
+        "EditClueView",
+        "deleteQuestButton"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    },
+    {
+      "requirement_id": "REQ-PERSIST-001",
+      "source_markers": [
+        "PersistedSafariData",
+        "storeURL",
+        "saveFindMoment",
+        "testFindMomentPersistsAcrossRelaunch"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    },
+    {
+      "requirement_id": "REQ-VIS-001",
+      "source_markers": [
+        "ChalkCard",
+        "ProgressBeads",
+        "EmptySidewalkIllustration",
+        "BadgeStrip"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    },
+    {
+      "requirement_id": "REQ-EMPTY-001",
+      "source_markers": [
+        "Pick a starter quest or make your first sidewalk safari.",
+        "EmptySidewalkIllustration",
+        "Restore starter quests"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    },
+    {
+      "requirement_id": "REQ-ERROR-001",
+      "source_markers": [
+        "Couldn\u2019t save this find moment. Try again.",
+        "confirmationDialog",
+        "storeKitUnavailableCopy"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    },
+    {
+      "requirement_id": "REQ-PRIVACY-001",
+      "source_markers": [
+        "privacyBoundaryCopy",
+        "does not upload",
+        "PrivacyInfo.xcprivacy"
+      ],
+      "missing_markers": [
+        "PrivacyInfo.xcprivacy"
+      ],
+      "source_readback_pass": false
+    },
+    {
+      "requirement_id": "REQ-PREMIUM-001",
+      "source_markers": [
+        "PremiumEntitlementCache",
+        "PremiumPreviewView",
+        "StoreKit is unavailable"
+      ],
+      "missing_markers": [],
+      "source_readback_pass": true
+    }
+  ],
+  "english_locale_scan": {
+    "non_ascii_user_copy_allowed_in_docs_only": true,
+    "user_visible_locale": "en-US"
+  },
+  "implementation_mode": "agent_native_build_loop",
+  "generator_template_substitution_allowed": false,
+  "generated_at": "2026-07-08T15:09:43.991380+00:00"
+}

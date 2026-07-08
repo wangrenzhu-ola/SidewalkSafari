@@ -1,0 +1,36 @@
+{
+  "schema_version": "appfactory.xcode_runtime_report.v1",
+  "app_name": "Sidewalk Safari",
+  "bundle_id": "com.sidewalksafari.family",
+  "xcodebuild": [
+    "Xcode 26.6",
+    "Build version 17F113"
+  ],
+  "simulator": {
+    "udid": "BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8",
+    "name": "iPhone 17",
+    "booted": true
+  },
+  "build": {
+    "command": "xcodebuild build -project SidewalkSafari.xcodeproj -scheme SidewalkSafari -destination generic/platform=iOS Simulator CODE_SIGNING_ALLOWED=NO",
+    "exit_code": 0,
+    "log_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_build.log"
+  },
+  "test": {
+    "command": "xcodebuild test -project SidewalkSafari.xcodeproj -scheme SidewalkSafari -destination id=BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8 CODE_SIGNING_ALLOWED=NO",
+    "exit_code": 0,
+    "log_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+    "passed_tests": 4
+  },
+  "install_launch": {
+    "command": "xcrun simctl install/launch/io screenshot",
+    "exit_code": 0,
+    "log_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/simulator_install_launch.log",
+    "screenshot_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/sidewalk_safari_launch.png"
+  },
+  "runtime_readback_refs": [
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/simulator_install_launch.log",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/sidewalk_safari_launch.png"
+  ],
+  "generated_at": "2026-07-08T15:09:29.956819+00:00"
+}

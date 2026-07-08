@@ -2,8 +2,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "TankTheaterCareScenesSupport",
+    name: "SidewalkSafariSupport",
     platforms: [.iOS(.v17)],
-    products: [.library(name: "TankTheaterCareScenesSupport", targets: ["TankTheaterCareScenesSupport"])],
-    targets: [.target(name: "TankTheaterCareScenesSupport", path: "TankTheaterCareScenesSupport")]
+    products: [.library(name: "SidewalkSafariSupport", targets: ["SidewalkSafariSupport"])],
+    targets: [.target(name: "SidewalkSafariSupport", path: "SidewalkSafariSupport")]
 )
