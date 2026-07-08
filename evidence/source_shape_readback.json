@@ -76,12 +76,10 @@
       "source_markers": [
         "privacyBoundaryCopy",
         "does not upload",
-        "PrivacyInfo.xcprivacy"
+        "NSPrivacyCollectedDataTypes"
       ],
-      "missing_markers": [
-        "PrivacyInfo.xcprivacy"
-      ],
-      "source_readback_pass": false
+      "missing_markers": [],
+      "source_readback_pass": true
     },
     {
       "requirement_id": "REQ-PREMIUM-001",
@@ -95,10 +93,10 @@
     }
   ],
   "english_locale_scan": {
-    "non_ascii_user_copy_allowed_in_docs_only": true,
-    "user_visible_locale": "en-US"
+    "user_visible_locale": "en-US",
+    "localized_sample_copy": "English (United States)"
   },
   "implementation_mode": "agent_native_build_loop",
   "generator_template_substitution_allowed": false,
-  "generated_at": "2026-07-08T15:09:43.991380+00:00"
+  "generated_at": "2026-07-08T15:10:07.152841+00:00"
 }
