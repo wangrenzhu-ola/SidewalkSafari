@@ -16,14 +16,16 @@
   "repo_url": "https://github.com/wangrenzhu-ola/SidewalkSafari",
   "xcodeproj_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari.xcodeproj",
   "branch": "main",
-  "source_commit": "8b74217f13b09b0cb7e784f55cfc34078bd51d6b",
+  "source_commit": "895a2c4daaae316caa0d80deaec50d1fd3e120e4",
   "commit_refs": [
-    "8b74217 (HEAD -> main, origin/main) Refresh Sidewalk Safari evidence readback",
+    "895a2c4 Complete Sidewalk Safari rough app readback",
+    "8b74217 Refresh Sidewalk Safari evidence readback",
     "179ef32 Build Sidewalk Safari native SwiftUI rough app",
     "43b276a Initialize Sidewalk Safari Xcode shell"
   ],
   "build_ios_apps_evidence_refs": [
     "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_list.log",
     "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_build.log"
   ],
   "test_xcode_evidence_refs": [
@@ -42,5 +44,9 @@
   "product_goal_bundle_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/factory_production_queue/factory-group-20260708202458-7f3037f9/pm-docs-q-20260708202458-4908970c/PMAgent/product_goal_bundles/goal-001/goal_manifest.json",
   "contract_consumption_report_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/goal_consumption_report.json",
   "implementation_mode": "agent_native_build_loop",
-  "generator_template_substitution_allowed": false
+  "generator_template_substitution_allowed": false,
+  "release_commit": "895a2c4daaae316caa0d80deaec50d1fd3e120e4",
+  "head_commit_at_summary_refresh": "895a2c4daaae316caa0d80deaec50d1fd3e120e4",
+  "real_acceptance_report_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/acceptance_readback.json",
+  "updated_at": "2026-07-08T15:16:19.918317+00:00"
 }
