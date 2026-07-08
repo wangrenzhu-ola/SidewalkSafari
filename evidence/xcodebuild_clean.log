@@ -1,0 +1,12 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild clean -project SidewalkSafari.xcodeproj -scheme SidewalkSafari -destination "generic/platform=iOS Simulator"
+
+2026-07-08 23:15:47.776 xcodebuild[6360:269778817] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+** CLEAN SUCCEEDED **
+

@@ -121,6 +121,7 @@ struct FindMomentView: View {
     let questID: UUID
     @State private var note = "We found a tiny sidewalk surprise."
     @State private var moodTag = "Proud"
+    @State private var includePhotoPlaceholder = false
 
     var body: some View {
         NavigationStack {
@@ -136,6 +137,12 @@ struct FindMomentView: View {
                         Text("Curious").tag("Curious")
                         Text("Silly").tag("Silly")
                     }
+                }
+                Section("Optional local photo placeholder") {
+                    Toggle("Mark that your family saved a local photo outside the app", isOn: $includePhotoPlaceholder)
+                    Text("Sidewalk Safari stores only this local placeholder ID and does not upload photos.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
                 }
                 if let error = store.lastErrorMessage {
                     Section { Text(error).foregroundStyle(.red).accessibilityIdentifier("findMomentSaveError") }
@@ -154,7 +161,7 @@ struct FindMomentView: View {
 
     private func save() {
         do {
-            _ = try store.saveFindMoment(questID: questID, note: note, moodTag: moodTag)
+            _ = try store.saveFindMoment(questID: questID, note: note, moodTag: moodTag, optionalPhotoLocalIdentifier: includePhotoPlaceholder ? "local-photo-placeholder" : nil)
             dismiss()
         } catch {
             // The store keeps the note intact and exposes the retry copy.

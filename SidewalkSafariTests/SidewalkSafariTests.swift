@@ -34,6 +34,22 @@ final class SidewalkSafariTests: XCTestCase {
         XCTAssertEqual(relaunched.progress(for: quest.id).completedClues, 1)
     }
 
+    func testEditAndDeleteFindMoment() throws {
+        let store = makeStore()
+        let quest = store.createQuest(title: "Tiny Signs", routeHint: "Walk to the bus stop.", theme: "pebble", cluePrompts: ["Find a curved number"])
+        let moment = try store.saveFindMoment(questID: quest.id, note: "We saw the number 8.", moodTag: "Curious", optionalPhotoLocalIdentifier: "local-photo-placeholder")
+        store.updateFindMoment(moment, note: "We saw the number 8 on a door.", moodTag: "Proud", optionalPhotoLocalIdentifier: nil)
+        XCTAssertEqual(store.findMoments.first?.note, "We saw the number 8 on a door.")
+        XCTAssertNil(store.findMoments.first?.optionalPhotoLocalIdentifier)
+        store.deleteFindMoment(try XCTUnwrap(store.findMoments.first))
+        XCTAssertTrue(store.findMoments.isEmpty)
+    }
+
+    func testRequiredStarterQuestNames() {
+        let names = StarterQuestFactory.quests().map(\.title)
+        XCTAssertEqual(names, ["Color Hunt", "Sound Steps", "Tiny Signs"])
+    }
+
     func testSaveFailureKeepsRecoveryCopyAndRetryPath() throws {
         let store = makeStore()
         let quest = store.createQuest(title: "Door Safari", routeHint: "One block", theme: "chalk", cluePrompts: ["Find a red door"])

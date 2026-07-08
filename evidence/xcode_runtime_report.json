@@ -20,7 +20,7 @@
     "command": "xcodebuild test -project SidewalkSafari.xcodeproj -scheme SidewalkSafari -destination id=BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8 CODE_SIGNING_ALLOWED=NO",
     "exit_code": 0,
     "log_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
-    "passed_tests": 4
+    "passed_tests": 6
   },
   "install_launch": {
     "command": "xcrun simctl install/launch/io screenshot",
@@ -32,5 +32,5 @@
     "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/simulator_install_launch.log",
     "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/sidewalk_safari_launch.png"
   ],
-  "generated_at": "2026-07-08T15:09:29.956819+00:00"
+  "generated_at": "2026-07-08T15:15:26.184753+00:00"
 }

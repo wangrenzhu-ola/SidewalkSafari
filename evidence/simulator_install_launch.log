@@ -1,28 +1,7 @@
 simulator=BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8
 app=/Users/wangrenzhu/Library/Developer/Xcode/DerivedData/SidewalkSafari-bksnbejiqlzroabaypfntuhbptuq/Build/Products/Debug-iphonesimulator/SidewalkSafari.app
-Monitoring boot status for iPhone 17 (BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8).
-Booting device...
-[2026-07-08 15:09:07 +0000] Status=0, isTerminal=NO, Elapsed=00:00.
-	Booting
-
-[2026-07-08 15:09:09 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
-	Waiting on Data Migration
-		Reason:(null)
-		Migration Elapsed:00:00 seconds
-
-[2026-07-08 15:09:15 +0000] Status=4, isTerminal=NO, Elapsed=00:07.
-	Waiting on System App
-
-[2026-07-08 15:09:15 +0000] Status=4, isTerminal=NO, Elapsed=00:07.
-	Waiting on System App
-
-[2026-07-08 15:09:16 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:09.
-	Finished
-
-install:
-launch:
-com.sidewalksafari.family: 45186
-screenshot:
+com.sidewalksafari.family: 82419
 Detected file type from extension: PNG
-Note: No display specified. Defaulting to display: E88552EE-52F1-4B1B-A121-233162778051 (screenID: 1, name: LCD)
+Note: No display specified. Defaulting to display: 9DDC5F18-5BC1-4D70-ADD4-E482BCCDD7B1 (screenID: 1, name: LCD)
 Wrote screenshot to: /Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/sidewalk_safari_launch.png
+install_launch_exit=0

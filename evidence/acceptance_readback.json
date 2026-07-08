@@ -1,0 +1,74 @@
+{
+  "schema_version": "appfactory.acceptance_readback.v1",
+  "status": "pass",
+  "requirement_results": [
+    {
+      "requirement_id": "REQ-CRUD-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-PERSIST-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-VIS-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-EMPTY-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-ERROR-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-PRIVACY-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    },
+    {
+      "requirement_id": "REQ-PREMIUM-001",
+      "status": "pass",
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+        "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json"
+      ]
+    }
+  ],
+  "stale_cross_product_scan": {
+    "command": "repo-wide stale cross-product string scan excluding git/build artifacts",
+    "non_log_findings": []
+  },
+  "generated_at": "2026-07-08T15:15:53.573065+00:00"
+}

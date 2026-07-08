@@ -22,9 +22,16 @@
         "func createQuest",
         "func updateQuest",
         "func deleteQuest",
+        "func updateClue",
+        "func saveFindMoment",
+        "func updateFindMoment",
+        "func deleteFindMoment",
         "CreateQuestView",
         "EditClueView",
-        "deleteQuestButton"
+        "EditQuestView",
+        "EditFindMomentView",
+        "deleteQuestButton",
+        "deleteFindMomentButton"
       ],
       "missing_markers": [],
       "source_readback_pass": true
@@ -76,7 +83,8 @@
       "source_markers": [
         "privacyBoundaryCopy",
         "does not upload",
-        "NSPrivacyCollectedDataTypes"
+        "PrivacyInfo.xcprivacy",
+        "optional photo placeholders stay on this device"
       ],
       "missing_markers": [],
       "source_readback_pass": true
@@ -86,7 +94,9 @@
       "source_markers": [
         "PremiumEntitlementCache",
         "PremiumPreviewView",
-        "StoreKit is unavailable"
+        "StoreKit is unavailable",
+        "SidewalkSafariThemePack.storekit",
+        "com.sidewalksafari.family.chalkfestival"
       ],
       "missing_markers": [],
       "source_readback_pass": true
@@ -94,9 +104,15 @@
   ],
   "english_locale_scan": {
     "user_visible_locale": "en-US",
-    "localized_sample_copy": "English (United States)"
+    "localized_sample_copy": "English (United States)",
+    "non_en_user_copy_findings": []
   },
+  "starter_quest_names": [
+    "Color Hunt",
+    "Sound Steps",
+    "Tiny Signs"
+  ],
   "implementation_mode": "agent_native_build_loop",
   "generator_template_substitution_allowed": false,
-  "generated_at": "2026-07-08T15:10:07.152841+00:00"
+  "generated_at": "2026-07-08T15:15:26.183983+00:00"
 }

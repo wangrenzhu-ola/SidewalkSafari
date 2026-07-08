@@ -113,31 +113,45 @@ enum SafariStoreError: LocalizedError, Equatable {
 
 enum StarterQuestFactory {
     static func quests(now: Date = Date()) -> [SidewalkQuest] {
-        let doorQuest = UUID()
-        let tinyQuest = UUID()
+        let colorHunt = UUID()
+        let soundSteps = UUID()
+        let tinySigns = UUID()
         return [
             SidewalkQuest(
-                id: doorQuest,
-                title: "Chalk Door Safari",
-                routeHint: "Walk one calm block and look for welcoming doors, numbers, and porch details.",
+                id: colorHunt,
+                title: "Color Hunt",
+                routeHint: "Walk one calm block and collect cheerful colors from doors, signs, flowers, and chalk marks.",
                 theme: "chalk",
                 clueTiles: [
-                    ClueTile(questId: doorQuest, prompt: "Find a red door or a bright welcome mat.", order: 0, optionalHint: "Look at porches and apartment entries."),
-                    ClueTile(questId: doorQuest, prompt: "Spot a house number with a curved digit.", order: 1, optionalHint: "Try 2, 3, 6, 8, or 9."),
-                    ClueTile(questId: doorQuest, prompt: "Choose the friendliest plant by a doorway.", order: 2, optionalHint: "A tiny weed can count if your explorer likes it.")
+                    ClueTile(questId: colorHunt, prompt: "Find a red door or a bright welcome mat.", order: 0, optionalHint: "Look at porches and apartment entries."),
+                    ClueTile(questId: colorHunt, prompt: "Spot something sky blue above the sidewalk.", order: 1, optionalHint: "Try signs, bikes, shutters, or painted trim."),
+                    ClueTile(questId: colorHunt, prompt: "Choose the friendliest green plant by the curb.", order: 2, optionalHint: "A tiny weed can count if your explorer likes it.")
                 ],
                 createdAt: now,
                 updatedAt: now
             ),
             SidewalkQuest(
-                id: tinyQuest,
-                title: "Tiny Tracks Quest",
-                routeHint: "Use the next errand walk to notice marks, shadows, and little sidewalk surprises.",
+                id: soundSteps,
+                title: "Sound Steps",
+                routeHint: "Use the next errand walk to notice sounds before you name what made them.",
+                theme: "sky",
+                clueTiles: [
+                    ClueTile(questId: soundSteps, prompt: "Hear three street sounds and tap a bead for each favorite.", order: 0),
+                    ClueTile(questId: soundSteps, prompt: "Find a quiet spot and whisper what changed.", order: 1),
+                    ClueTile(questId: soundSteps, prompt: "Guess a sound source before turning the corner.", order: 2)
+                ],
+                createdAt: now,
+                updatedAt: now
+            ),
+            SidewalkQuest(
+                id: tinySigns,
+                title: "Tiny Signs",
+                routeHint: "Look close at numbers, arrows, cracks, stickers, shadows, and little sidewalk surprises.",
                 theme: "pebble",
                 clueTiles: [
-                    ClueTile(questId: tinyQuest, prompt: "Find a crack shaped like a river.", order: 0),
-                    ClueTile(questId: tinyQuest, prompt: "Point to three different leaf shapes.", order: 1),
-                    ClueTile(questId: tinyQuest, prompt: "Listen for a sound you cannot see yet.", order: 2)
+                    ClueTile(questId: tinySigns, prompt: "Find a crack shaped like a river.", order: 0),
+                    ClueTile(questId: tinySigns, prompt: "Spot a number with a curved digit.", order: 1, optionalHint: "Try 2, 3, 6, 8, or 9."),
+                    ClueTile(questId: tinySigns, prompt: "Point to a tiny sign that tells walkers what to do.", order: 2)
                 ],
                 createdAt: now,
                 updatedAt: now
@@ -253,6 +267,20 @@ final class SafariStore: ObservableObject {
         quests.removeAll { $0.id == quest.id }
         findMoments.removeAll { $0.questId == quest.id }
         badgeProgress.removeAll { $0.questId == quest.id }
+        persistIgnoringErrors()
+    }
+
+    func updateFindMoment(_ moment: FindMoment, note: String, moodTag: String, optionalPhotoLocalIdentifier: String? = nil) {
+        guard let index = findMoments.firstIndex(where: { $0.id == moment.id }) else { return }
+        findMoments[index].note = note
+        findMoments[index].moodTag = moodTag
+        findMoments[index].optionalPhotoLocalIdentifier = optionalPhotoLocalIdentifier
+        findMoments[index].savedAt = Date()
+        persistIgnoringErrors()
+    }
+
+    func deleteFindMoment(_ moment: FindMoment) {
+        findMoments.removeAll { $0.id == moment.id }
         persistIgnoringErrors()
     }
 

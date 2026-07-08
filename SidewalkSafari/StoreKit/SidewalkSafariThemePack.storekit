@@ -1,0 +1,24 @@
+{
+  "identifier" : "com.sidewalksafari.family.storekit.local",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "sidewalk-safari-chalk-festival-pack",
+      "localizations" : [
+        {
+          "description" : "Preview brighter clue cards, festival bead colors, and extra local badge strip styles. Core starter quests, custom clues, find moments, and Safari Log stay free.",
+          "displayName" : "Chalk Festival Pack",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.sidewalksafari.family.chalkfestival",
+      "referenceName" : "Sidewalk Safari Chalk Festival Pack",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : { "_failTransactionsEnabled" : true, "_locale" : "en_US", "_storefront" : "USA" },
+  "subscriptionGroups" : [],
+  "version" : { "major" : 4, "minor" : 0 }
+}

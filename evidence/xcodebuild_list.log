@@ -1,0 +1,17 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -list -project SidewalkSafari.xcodeproj
+
+Information about project "SidewalkSafari":
+    Targets:
+        SidewalkSafari
+        SidewalkSafariTests
+
+    Build Configurations:
+        Debug
+        Release
+
+    If no build configuration is specified and -scheme is not passed then "Release" is used.
+
+    Schemes:
+        SidewalkSafari
+

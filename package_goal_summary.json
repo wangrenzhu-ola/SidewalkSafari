@@ -1,130 +1,46 @@
 {
-  "app_name": "TankTheater Care Scenes",
-  "worker_status": "repo_ready_for_business_patch",
+  "schema_version": "appfactory.package_goal_summary.v1",
+  "app_name": "Sidewalk Safari",
+  "worker_status": "rough_app_ready",
   "applied_skill_ids": [
-    "ios-iap-acceptance",
-    "test-xcode",
-    "taste-skill",
-    "ios-iap-implementation",
-    "ios-app-intents",
-    "swiftui-view-refactor",
-    "ios_runtime_acceptance",
-    "swiftui-ui-patterns",
+    "factory-rough-app-builder",
+    "appfactory-runtime-io",
     "build-ios-apps",
-    "ios-compliance-acceptance",
-    "ios-privacy-implementation"
+    "test-xcode",
+    "swiftui-ui-patterns",
+    "swiftui-view-refactor",
+    "taste-skill"
   ],
-  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-001-tanktheater-care-scenes/package_goal_map.md",
-  "repo_path": "/Users/wangrenzhu/work/TankTheaterCareScenes",
-  "repo_url": "https://github.com/wangrenzhu-ola/TankTheaterCareScenes",
-  "xcodeproj_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes.xcodeproj",
+  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/factory_production_queue/factory-group-20260708202458-7f3037f9/pm-docs-q-20260708202458-4908970c/PMAgent/product_goal_bundles/goal-001/package_goal_map.md",
+  "repo_path": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari",
+  "repo_url": "https://github.com/wangrenzhu-ola/SidewalkSafari",
+  "xcodeproj_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/SidewalkSafari.xcodeproj",
+  "branch": "main",
+  "source_commit": "8b74217f13b09b0cb7e784f55cfc34078bd51d6b",
   "commit_refs": [
-    "cb75c7c532b063744cbca190492b550ad549eb25 Patchback TankTheater artifact and UltraQA contracts",
-    "6ac5c584563f74f40c04f9020c6c78444b11e1a1 Refresh TankTheater summary with clean status commit",
-    "02a87430ad432f55c25db9a4c6ede550cb02062d Record clean status after TankTheater patchback",
-    "b5ebaff0c0a456c35077dbee2972f5cba4763f29 Refresh TankTheater summary after patchback",
-    "319b749b39bdac082a3a48e242ea0bd685d29675 Patchback TankTheater FinalGate evidence gaps",
-    "72b55db3cc67d0c0f539746e14455b78baa18e58 Add Care Scene save success feedback",
-    "2ab624329687ddba5d07d44667eca030ef9274a2 Add TankTheater runtime validator evidence",
-    "83e38dad514329a3f28ad5ed00eb9e31bfede1dc Refresh TankTheater summary commit refs",
-    "635305672bd3aac8b57054105600bbec18ccc400 Record TankTheater GitHub public repo evidence",
-    "b6cbcf6bce1cf86933ccf9e88c7f71df6d6669fc Update TankTheater public repo URL",
-    "8470b0d7d1d296fbbdd303f047a9b5d63dacd3d6 Record TankTheater delivery evidence summary",
-    "894dd80723e27be7f2d6c98a01fb305e11149d60 Add TankTheater build and runtime evidence",
-    "b543708ac22afd080db2fa8bba5e9be49f0d601b Import Combine for observable stores",
-    "de28c3cbc4d2c8763048eb4d5f3dedb41473a24d Fix TankTheater shared Xcode scheme",
-    "c730cb205c94da1bcb42b516d3764c42c194b754 Build TankTheater Care Scenes SwiftUI app"
+    "8b74217 (HEAD -> main, origin/main) Refresh Sidewalk Safari evidence readback",
+    "179ef32 Build Sidewalk Safari native SwiftUI rough app",
+    "43b276a Initialize Sidewalk Safari Xcode shell"
   ],
   "build_ios_apps_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/source_shape_readback.json",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/xcodebuild_list.log",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/xcodebuild_build.log"
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/source_shape_readback.json",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_build.log"
   ],
   "test_xcode_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/xcodebuild_test.log",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/simulator_install_launch.log",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_launch.png",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_persistence_readback.png",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_relaunch_readback.png"
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcodebuild_test.log",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/simulator_install_launch.log",
+    "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/sidewalk_safari_launch.png"
   ],
-  "xcode_runtime_result_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/xcode_runtime_report.json",
-  "iap_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/ios_iap_acceptance.json"
-  ],
-  "compliance_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/ios_compliance_acceptance.json"
-  ],
-  "skill_evidence_refs": {
-    "skills/ios-iap-acceptance/SKILL.md": "ios-iap-acceptance",
-    "skills/ios-compliance-acceptance/SKILL.md": "ios-compliance-acceptance",
-    "skills/ios-app-intents/SKILL.md": "ios-app-intents"
-  },
+  "xcode_runtime_result_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/evidence/xcode_runtime_report.json",
   "implemented_with_real_interaction": true,
   "persistence_implemented": true,
   "sample_data_only": false,
   "static_ui_only": false,
   "known_gaps": [],
   "blockers": [],
-  "github_public_repo_url": "https://github.com/wangrenzhu-ola/TankTheaterCareScenes",
-  "schema_version": "appfactory.package_goal_summary.v1",
-  "run_id": "codex-5app-production-20260708-095109",
-  "branch": "main",
-  "source_commit": "cb75c7c532b063744cbca190492b550ad549eb25",
-  "release_commit": "cb75c7c532b063744cbca190492b550ad549eb25",
-  "head_commit_at_summary_refresh": "319b749b39bdac082a3a48e242ea0bd685d29675",
-  "github_pushed": true,
-  "product_goal_bundle_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-001-tanktheater-care-scenes",
-  "contract_consumption_report_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/goal_consumption_report.json",
-  "local_git_readback_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/local_git_readback.json",
-  "build_artifact_ref": "/Users/wangrenzhu/work/codex-goal-runs/codex-5app-production-20260708-095109/artifacts/app_1_tanktheater/TankTheaterCareScenes-source-delivery.zip",
-  "artifact_sha256": "3d47a868549fe0cfa8dbe082d2ff13eae03b7c71ad763fc44944ae04cdb223cf",
-  "ultraqa_report_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/ultraqa_report.json",
-  "ultraqa_status": "PASS",
-  "scenario_matrix_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/scenario_matrix.json",
-  "fresh_runtime_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/runtime_crud_persistence_readback.log",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_persistence_readback.png",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_relaunch_readback.png",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/simulator_install_launch.log"
-  ],
-  "visual_asset_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/visual_asset_evidence.json",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_launch.png",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_persistence_readback.png"
-  ],
-  "real_interaction_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes/CareSceneStudioView.swift",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes/CareSceneDetailView.swift",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes/CareSceneStore.swift",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/xcodebuild_test.log"
-  ],
-  "persistence_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes/CareSceneStore.swift",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/runtime_crud_persistence_readback.log",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/tanktheater_relaunch_readback.png"
-  ],
-  "save_success_feedback_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/save_success_feedback.json",
-  "ios_app_intents_evidence_refs": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/ios_app_intents_acceptance.json",
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/TankTheaterCareScenes/CareSceneIntents.swift"
-  ],
-  "patchback_rounds": [
-    "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/package_patch_round_1.json"
-  ],
-  "final_gate_run_count": 1,
-  "finalgate_rounds": [],
-  "implemented_requirement_ids": [
-    "REQ-CRUD-001",
-    "REQ-PERSIST-001",
-    "REQ-VIS-001",
-    "REQ-EMPTY-001",
-    "REQ-ERROR-001",
-    "REQ-PRIVACY-001",
-    "REQ-PREMIUM-001",
-    "REQ-AI-001",
-    "REQ-APPINTENT-001"
-  ],
-  "real_acceptance_report_ref": "/Users/wangrenzhu/work/TankTheaterCareScenes/evidence/real_acceptance_report.json",
-  "real_acceptance_status": "repo_ready_for_business_patch",
-  "finalgate_required_by_current_amendment": false
+  "github_public_repo_url": "https://github.com/wangrenzhu-ola/SidewalkSafari",
+  "product_goal_bundle_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/factory_production_queue/factory-group-20260708202458-7f3037f9/pm-docs-q-20260708202458-4908970c/PMAgent/product_goal_bundles/goal-001/goal_manifest.json",
+  "contract_consumption_report_ref": "/Users/wangrenzhu/work/AI-Infra/standalone-repos/SidewalkSafari/goal_consumption_report.json",
+  "implementation_mode": "agent_native_build_loop",
+  "generator_template_substitution_allowed": false
 }

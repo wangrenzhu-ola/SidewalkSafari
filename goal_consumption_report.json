@@ -1,5 +1,6 @@
 {
-  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-001-tanktheater-care-scenes/package_goal_map.md",
+  "schema_version": "appfactory.goal_consumption_report.v1",
+  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/factory_production_queue/factory-group-20260708202458-7f3037f9/pm-docs-q-20260708202458-4908970c/PMAgent/product_goal_bundles/goal-001/package_goal_map.md",
   "expanded_pm_refs": [
     "pm_brief.md",
     "current_version_requirements.md",
@@ -20,11 +21,22 @@
   "implementation_mode": "goal_driven_model_build",
   "python_template_substitution_allowed": false,
   "applied_skill_ids": [
+    "factory-rough-app-builder",
+    "appfactory-runtime-io",
     "build-ios-apps",
+    "test-xcode",
     "swiftui-ui-patterns",
     "swiftui-view-refactor",
-    "taste-skill",
-    "ios-iap-implementation",
-    "ios-privacy-implementation"
+    "taste-skill"
+  ],
+  "locked_locale": "en-US",
+  "required_requirement_ids": [
+    "REQ-CRUD-001",
+    "REQ-PERSIST-001",
+    "REQ-VIS-001",
+    "REQ-EMPTY-001",
+    "REQ-ERROR-001",
+    "REQ-PRIVACY-001",
+    "REQ-PREMIUM-001"
   ]
 }
